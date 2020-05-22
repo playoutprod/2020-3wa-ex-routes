@@ -1,0 +1,5 @@
+.dashboard li{
+  list-style: none;
+  display: block;
+  margin:.5em
+}
