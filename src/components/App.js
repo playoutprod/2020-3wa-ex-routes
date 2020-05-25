@@ -39,11 +39,10 @@ class App extends Component{
             <Route exact path="/" component={Home}/>
 
             <Route path="/login" render={(props)=>(<Login onLog={this.onLog} isLogged={this.state.isLogged} {...props}/>)}/>
+
             <Route path="/logout" render={(props)=>(<Login onLog={this.onLog} isLogged={this.state.isLogged} {...props}/>)}/>
 
             <PrivateRoute path="/dashboard" component={Dashboard} posts={data}/>
-
-
 
             <PrivateRoute path="/post/:id" component={Post} />
 

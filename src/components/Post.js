@@ -7,7 +7,7 @@ const Post = (props) =>{
 
   const { params } = props.match;
 
-console.log(props)
+  console.log(props)
 
   const postData = data.filter(elmt => elmt.id == params.id);
 

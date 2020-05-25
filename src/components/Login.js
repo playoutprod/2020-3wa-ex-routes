@@ -13,6 +13,8 @@ class Login extends Component{
       password:""
     }
 
+    console.log(this.props)
+
     if(this.props.location){
       if(this.props.location.pathname === "/logout"){
         localStorage.removeItem('authToken');
@@ -42,7 +44,7 @@ class Login extends Component{
   }
 
   render(){
-    
+
     if(localStorage.getItem('authToken')){
       if(this.props.location){
         return(
